@@ -1,6 +1,5 @@
 package dad.openlibrary.ui;
 
-import dad.openlibrary.api.Doc;
 import dad.openlibrary.api.OpenLibrary;
 import dad.openlibrary.api.SearchResult;
 import dad.openlibrary.model.Book;
@@ -16,10 +15,8 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.util.stream.Collectors;
 
 public class RootController implements Initializable {
 
