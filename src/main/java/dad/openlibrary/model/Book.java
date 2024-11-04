@@ -10,7 +10,7 @@ public class Book {
     private final StringProperty publisher = new SimpleStringProperty();
     private final StringProperty isbn = new SimpleStringProperty();
     private final IntegerProperty numPages = new SimpleIntegerProperty();
-    private final ReadOnlyBooleanWrapper hasPages = new ReadOnlyBooleanWrapper();
+    private final BooleanProperty hasPages = new SimpleBooleanProperty();
 
     public Book() {}
 
@@ -87,8 +87,8 @@ public class Book {
         return hasPages.get();
     }
 
-    public ReadOnlyBooleanProperty hasPagesProperty() {
-        return hasPages.getReadOnlyProperty();
+    public BooleanProperty hasPagesProperty() {
+        return hasPages;
     }
 
 }
